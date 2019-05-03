@@ -24,5 +24,9 @@ class Quotes extends Component {
   }
 }
 
-//add arguments to connect as needed
+const mapStateToProps = state => {
+  return({
+    
+  })
+}
 export default connect()(Quotes);
