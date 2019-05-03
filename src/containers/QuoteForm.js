@@ -19,6 +19,7 @@ class QuoteForm extends Component {
     // Create quote object from state
     // Pass quote object to action creator
     // Update component state to return to default state
+    
   }
 
   render() {
