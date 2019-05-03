@@ -1,6 +1,7 @@
 export default quotesReducer(state = [], action) => {
 
-  let idx;
+  let index;
+  let quote;
 
   switch(action.type) {
     case 'ADD_QUOTE':
@@ -11,7 +12,7 @@ export default quotesReducer(state = [], action) => {
       return [...state.slice(0, idx), ...state.slice(idx+1)];
 
     case 'UPVOTE_QUOTE':
-      
+
 
     case 'DOWNVOTE_QUOTE':
 
