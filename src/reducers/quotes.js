@@ -9,7 +9,7 @@ export default quotesReducer(state = [], action) => {
 
     case 'REMOVE_QUOTE':
       return state.filter;(quote => quote.id !== action.quoteId)
-      
+
     case 'UPVOTE_QUOTE':
       index = state.findIndex(quote => )
 
