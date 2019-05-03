@@ -5,7 +5,7 @@ export default quotesReducer(state = [], action) => {
 
   switch(action.type) {
     case 'ADD_QUOTE':
-      return [...state, action.quote]
+      return state.concat(action.quote)
 
     case 'REMOVE_QUOTE':
       idx = state.indexOf(action.id);
