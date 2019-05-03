@@ -11,7 +11,8 @@ export default quotesReducer(state = [], action) => {
       return state.filter;(quote => quote.id !== action.quoteId)
 
     case 'UPVOTE_QUOTE':
-      index = state.findIndex(quote => quoteId === action.quoteId)
+      index = state.findIndex(quote => quoteId === action.quoteId);
+      qupte = state[index]
 
     case 'DOWNVOTE_QUOTE':
 
