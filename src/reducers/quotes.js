@@ -8,9 +8,10 @@ export default quotesReducer(state = [], action) => {
 
     case 'REMOVE_QUOTE':
       idx = state.indexOf(action.id);
-      return [...state.slice(0, idx), ...state.slice(idx+1)]
+      return [...state.slice(0, idx), ...state.slice(idx+1)];
 
     case 'UPVOTE_QUOTE':
+      
 
     case 'DOWNVOTE_QUOTE':
 
