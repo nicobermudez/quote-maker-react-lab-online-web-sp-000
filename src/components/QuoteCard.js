@@ -6,7 +6,7 @@ const QuoteCard = ({quote, removeQuote, upvoteQuote, downvoteQuote }) =>
       <div className="card-block">
         <blockquote className="card-blockquote">
           <p>{quote.content}</p>
-          <footer>- author <cite title="Source Title">{quote.author}</cite></footer> 
+          <footer>- author <cite title="Source Title">{quote.author}</cite></footer>
         </blockquote>
       </div>
       <div className="float-right">
@@ -19,6 +19,7 @@ const QuoteCard = ({quote, removeQuote, upvoteQuote, downvoteQuote }) =>
           </button>
           <button
             type="button"
+            onClick={() => }
             className="btn btn-secondary"
           >
             Downvote
