@@ -7,7 +7,7 @@ export default quotesReducer(state = [], action) => {
       return [...state, action.quote]
 
     case 'REMOVE_QUOTE':
-      
+      idx = state.indexOf(action.id)
 
     case 'UPVOTE_QUOTE':
 
