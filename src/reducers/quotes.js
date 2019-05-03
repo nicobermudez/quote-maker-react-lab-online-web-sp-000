@@ -8,7 +8,7 @@ export default (state = [], action) => {
       return state.concat(action.quote)
 
     case 'REMOVE_QUOTE':
-      return state.filter;(quote => quote.id !== action.quoteId)
+      return state.filter(quote => quote.id !== action.quoteId)
 
     case 'UPVOTE_QUOTE':
       index = state.findIndex(quote => quote.id === action.quoteId);
