@@ -19,7 +19,7 @@ export default (state = [], action) => {
       ];
 
     case 'DOWNVOTE_QUOTE':
-      index = state.findIndex(quote => quoteId === action.quoteId);
+      index = state.findIndex(quote => quote.id === action.quoteId);
       quote = state[index];
       if(quote.votes > 0) {
         return [
