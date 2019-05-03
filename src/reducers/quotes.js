@@ -1,3 +1,3 @@
-export default (state = [], action) => {
+export default quotesReducer(state = [], action) => {
   return state;
 }
