@@ -1,4 +1,4 @@
-export default quotesReducer(state = [], action) => {
+export default (state = [], action) => {
 
   let index;
   let quote;
@@ -27,6 +27,7 @@ export default quotesReducer(state = [], action) => {
         ...state.slice(index + 1)
         ];
       }
+      return state;
 
     default:
       return state;
