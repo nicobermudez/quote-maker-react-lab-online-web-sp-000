@@ -29,4 +29,4 @@ const mapStateToProps = state => {
     quote: state.quotes
   })
 }
-export default connect(mapStateToProps)(Quotes);
+export default connect(mapStateToProps, { removeQuote, upvoteQuote, downvoteQuote })(Quotes);
